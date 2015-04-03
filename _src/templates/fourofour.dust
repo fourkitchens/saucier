@@ -1,0 +1,7 @@
+{>"base_template.dust" title="404 - Page Not Found"/}
+
+{<pageContent}
+  <div class="wrapper">
+    <h1>Not Found</h1>
+  </div>
+{/pageContent}

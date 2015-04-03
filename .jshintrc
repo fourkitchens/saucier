@@ -1,0 +1,31 @@
+{
+  "bitwise": true,
+  "browser": true,
+  "camelcase": true,
+  "curly": true,
+  "devel": false,
+  "esnext": true,
+  "expr": true,
+  "forin": true,
+  "immed": true,
+  "indent": 2,
+  "latedef": true,
+  "maxcomplexity": 10,
+  "maxdepth": 3,
+  "maxlen": 130,
+  "newcap": false,
+  "noarg": true,
+  "node": true,
+  "quotmark": "single",
+  "regexp": true,
+  "smarttabs": true,
+  "strict": false,
+  "sub": true,
+  "trailing": true,
+  "undef": true,
+  "unused": true,
+  "globals": {
+    "classie": false,
+    "Gator": false
+  }
+}

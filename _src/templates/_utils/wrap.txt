@@ -1,0 +1,9 @@
+module.exports = (function() {
+  var dust = require("dustjs-linkedin");
+  require('dustjs-helpers');
+  require('dustjs-helper-maxlength');
+  require('dustmotes-iterate');
+  <%= contents %>
+  // Returning object for nodejs
+  return dust;
+})();
