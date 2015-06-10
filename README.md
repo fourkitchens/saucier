@@ -1,21 +1,48 @@
 ```
-
-██╗  ██╗██╗  ██╗    ██╗  ██╗███████╗ █████╗ ██████╗ ██╗     ███████╗███████╗███████╗
-██║  ██║██║ ██╔╝    ██║  ██║██╔════╝██╔══██╗██╔══██╗██║     ██╔════╝██╔════╝██╔════╝
-███████║█████╔╝     ███████║█████╗  ███████║██║  ██║██║     █████╗  ███████╗███████╗
-╚════██║██╔═██╗     ██╔══██║██╔══╝  ██╔══██║██║  ██║██║     ██╔══╝  ╚════██║╚════██║
-     ██║██║  ██╗    ██║  ██║███████╗██║  ██║██████╔╝███████╗███████╗███████║███████║
-     ╚═╝╚═╝  ╚═╝    ╚═╝  ╚═╝╚══════╝╚═╝  ╚═╝╚═════╝ ╚══════╝╚══════╝╚══════╝╚══════╝
+███████╗ █████╗ ██╗   ██╗ ██████╗██╗███████╗██████╗
+██╔════╝██╔══██╗██║   ██║██╔════╝██║██╔════╝██╔══██╗
+███████╗███████║██║   ██║██║     ██║█████╗  ██████╔╝
+╚════██║██╔══██║██║   ██║██║     ██║██╔══╝  ██╔══██╗
+███████║██║  ██║╚██████╔╝╚██████╗██║███████╗██║  ██║
+╚══════╝╚═╝  ╚═╝ ╚═════╝  ╚═════╝╚═╝╚══════╝╚═╝  ╚═╝
 ```
 
-_Some starting points for a front-end for Drupal._
+A Node.JS framework for helping you build headless Drupal websites.
 
-## Details and Requirements
+## Local Development
 
-Setup tasks include, `bundle install` and `npm install && npm install -g gulp`. Copy `_env.json` to `env.json` and fill in the template values, or use the generator.
+Following these steps will ensure that you can develop locally.
 
-## Running the Server
+- Create an `./config/env.json` file. A template is located at, `./config/_env.json`
+- Ensure the `local` environment in `./config/env.json` is populated with
+  - The API endpoint you want to operate against.
+  - The Redis instance you want to get/set information from.
+- Create an `./config/_secrets.json` file. A template is located at, `./config/secrets.json`.
+- Populate the `./config/secrets.json` file. This information is intentionally excluded from Git.
 
-### Local
+### Installation
 
-Run the application with `gulp local`. This starts the application with `nodemon` and `watch` on to enable live-reloading, along with debug logs.
+These instructions are directly related to OSX.
+
+#### Prerequisites
+
+- Install Ruby. The current developed-with version of Ruby is `2.2.0`.
+  - You can use [Ruby Version Manager (RVM)](http://rvm.io/) to aid in this setup.
+- Install [Bundler](http://bundler.io/)
+  - `gem install bundler`
+- Install Homebrew. _While not directly required, this will help with any additional software you may need._
+  - `ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"`
+- Install Node Version Manager (NVM)
+  - `curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.25.3/install.sh | bash`
+  - Install the required version of Node.JS.
+  - `nvm install 0.12.4`
+- Install the task runner Gulp.
+  - `npm install -g gulp`
+
+#### Setup
+
+- Execute the following commands from the root directory of the project.
+  - `bundle install`
+  - `npm install`
+
+Start the application with `gulp local`. The executes the build task(s) in gulp and starts the Node.JS application with [Nodemon](https://www.npmjs.com/package/nodemon).

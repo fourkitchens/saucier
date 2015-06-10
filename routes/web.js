@@ -4,7 +4,8 @@ module.exports = function attach(app) {
 
   app.routeMulti('/', 'base_template.dust', {
     resource: [],
-    processors: []
+    processors: [],
+    key: 'home'
   });
 
 };
