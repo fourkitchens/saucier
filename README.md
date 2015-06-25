@@ -17,7 +17,7 @@ Following these steps will ensure that you can develop locally.
 - Ensure the `local` environment in `./config/env.json` is populated with
   - The API endpoint you want to operate against.
   - The Redis instance you want to get/set information from.
-- Create an `./config/_secrets.json` file. A template is located at, `./config/secrets.json`.
+- Create an `./config/secrets.json` file. A template is located at, `./config/_secrets.json`.
 - Populate the `./config/secrets.json` file. This information is intentionally excluded from Git.
 
 ### Installation
