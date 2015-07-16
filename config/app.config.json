@@ -8,7 +8,6 @@
   "paths": {
     "output": {
       "templates": "public/templates",
-      "css": "public/css",
       "images": "public/images",
       "scripts": "public/scripts"
     },
@@ -18,7 +17,6 @@
         "utils": "_src/templates/_utils/",
         "helpers": "_src/templates/_helpers/*.js"
       },
-      "sass": "_src/sass/**/*.scss",
       "images": "_src/images/**/*",
       "scripts": "_src/scripts/**/*"
     }
