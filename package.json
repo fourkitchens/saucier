@@ -1,12 +1,12 @@
 {
-  "name": "4K_HEADLESS",
-  "version": "0.0.2",
+  "name": "saucier-core",
+  "version": "0.0.3",
   "private": true,
   "maintainers": [
     {
       "name": "Matthew Grill",
       "email": "matt@fourkitchens.com",
-      "url": "http://fourkitchens.com/team/matt-grill/"
+      "url": "https://fourkitchens.com/team/matt-grill/"
     }
   ],
   "contributors": [
