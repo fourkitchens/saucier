@@ -1,6 +1,6 @@
 {
-  "name": "4K_HEADLESS",
-  "version": "0.0.2",
+  "name": "saucier-core",
+  "version": "0.0.3",
   "private": true,
   "maintainers": [
     {
