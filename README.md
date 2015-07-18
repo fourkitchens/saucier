@@ -26,10 +26,6 @@ These instructions are directly related to OSX.
 
 #### Prerequisites
 
-- Install Ruby. The current developed-with version of Ruby is `2.2.0`.
-  - You can use [Ruby Version Manager (RVM)](http://rvm.io/) to aid in this setup.
-- Install [Bundler](http://bundler.io/)
-  - `gem install bundler`
 - Install Homebrew. _While not directly required, this will help with any additional software you may need._
   - `ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"`
 - Install Node Version Manager (NVM)
@@ -42,7 +38,6 @@ These instructions are directly related to OSX.
 #### Setup
 
 - Execute the following commands from the root directory of the project.
-  - `bundle install`
   - `npm install`
 
 Start the application with `gulp local`. The executes the build task(s) in gulp and starts the Node.JS application with [Nodemon](https://www.npmjs.com/package/nodemon).
