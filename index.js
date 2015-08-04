@@ -6,7 +6,6 @@ var express = require('express'),
     helmet = require('helmet'),
     path = require('path'),
     debug = require('debug')('saucier:main'),
-    nconf = require('nconf'),
     processData = require('./lib/processData'),
     renderHandler = require('./lib/renderHandler'),
     cluster = require('cluster')
